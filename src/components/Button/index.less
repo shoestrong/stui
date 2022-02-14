@@ -1,0 +1,117 @@
+@import '../../styles/var.less';
+
+.@{prefix-name} {
+  &-button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    font: 400 13.3333px Arial;
+    vertical-align: top;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0);
+      content: '';
+    }
+
+    &:active:not(.@{prefix-name}-button-disabled):before {
+      background-color: @active-bg-color;
+    }
+
+    &-info {
+      user-select: none;
+      pointer-events: none;
+    }
+
+    &-primary {
+      color: #fff;
+      background-color: @primary-color;
+    }
+    &-warning {
+      color: #fff;
+      background-color: @warning-color;
+    }
+    &-danger {
+      color: #fff;
+      background-color: @danger-color;
+    }
+    &-default {
+      color: #fff;
+      background-color: @default-color;
+    }
+    &-success {
+      color: #fff;
+      background-color: @success-color;
+    }
+
+    &-plain-primary {
+      color: @primary-color;
+      border: 1px solid @primary-color;
+    }
+    &-plain-warning {
+      color: @warning-color;
+      border: 1px solid @warning-color;
+    }
+    &-plain-danger {
+      color: @danger-color;
+      border: 1px solid @danger-color;
+    }
+    &-plain-default {
+      color: @default-color;
+      border: 1px solid @default-color;
+    }
+    &-plain-success {
+      color: @success-color;
+      border: 1px solid @success-color;
+    }
+
+    &-normal {
+      padding: 6px 12px;
+      font-size: 14px;
+      svg {
+        font-size: 14px;
+      }
+    }
+    &-large {
+      padding: 12px 24px;
+      font-weight: 400;
+      font-size: 16px;
+      svg {
+        font-size: 16px;
+      }
+    }
+    &-small {
+      padding: 2px 4px;
+      font-size: 12px;
+      svg {
+        font-size: 12px;
+      }
+    }
+
+    &-block {
+      width: 100%;
+      padding-right: 6px;
+      padding-left: 6px;
+      text-align: center;
+    }
+
+    &-disabled {
+      color: @disabled-font-color;
+      background-color: @disabled-bg-color;
+      border: 1px solid @disabled-border-color;
+      cursor: not-allowed;
+      user-select: none;
+    }
+  }
+}
