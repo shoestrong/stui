@@ -1,105 +1,105 @@
-.r-zc-button {
-  box-sizing: border-box;
+.st-button {
   position: relative;
   display: inline-block;
-  vertical-align: top;
-  cursor: pointer;
-  outline: none;
-  border: 0;
-  background-color: transparent;
+  box-sizing: border-box;
   font: 400 13.3333px Arial;
+  vertical-align: top;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
-.r-zc-button:not(:last-child) {
+.st-button:not(:last-child) {
   margin-right: 4px;
 }
-.r-zc-button:before {
-  content: '';
+.st-button:before {
   position: absolute;
-  left: 0;
   top: 0;
   right: 0;
   bottom: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0);
+  content: '';
 }
-.r-zc-button:active:not(.r-zc-button-disabled):before {
+.st-button:active:not(.st-button-disabled):before {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.r-zc-button-info {
-  pointer-events: none;
+.st-button-info {
   user-select: none;
+  pointer-events: none;
 }
-.r-zc-button-primary {
+.st-button-primary {
+  color: #fff;
   background-color: #4569d4;
-  color: #fff;
 }
-.r-zc-button-warning {
+.st-button-warning {
+  color: #fff;
   background-color: #ff9010;
-  color: #fff;
 }
-.r-zc-button-danger {
+.st-button-danger {
+  color: #fff;
   background-color: #f50f50;
-  color: #fff;
 }
-.r-zc-button-default {
+.st-button-default {
+  color: #fff;
   background-color: #858585;
-  color: #fff;
 }
-.r-zc-button-success {
+.st-button-success {
+  color: #fff;
   background-color: #1bd91e;
-  color: #fff;
 }
-.r-zc-button-plain-primary {
+.st-button-plain-primary {
   color: #4569d4;
   border: 1px solid #4569d4;
 }
-.r-zc-button-plain-warning {
+.st-button-plain-warning {
   color: #ff9010;
   border: 1px solid #ff9010;
 }
-.r-zc-button-plain-danger {
+.st-button-plain-danger {
   color: #f50f50;
   border: 1px solid #f50f50;
 }
-.r-zc-button-plain-default {
+.st-button-plain-default {
   color: #858585;
   border: 1px solid #858585;
 }
-.r-zc-button-plain-success {
+.st-button-plain-success {
   color: #1bd91e;
   border: 1px solid #1bd91e;
 }
-.r-zc-button-normal {
+.st-button-normal {
   padding: 6px 12px;
   font-size: 14px;
 }
-.r-zc-button-normal svg {
+.st-button-normal svg {
   font-size: 14px;
 }
-.r-zc-button-large {
+.st-button-large {
   padding: 12px 24px;
-  font-size: 16px;
   font-weight: 400;
-}
-.r-zc-button-large svg {
   font-size: 16px;
 }
-.r-zc-button-small {
+.st-button-large svg {
+  font-size: 16px;
+}
+.st-button-small {
   padding: 2px 4px;
   font-size: 12px;
 }
-.r-zc-button-small svg {
+.st-button-small svg {
   font-size: 12px;
 }
-.r-zc-button-block {
+.st-button-block {
   width: 100%;
-  text-align: center;
-  padding-left: 6px;
   padding-right: 6px;
+  padding-left: 6px;
+  text-align: center;
 }
-.r-zc-button-disabled {
-  cursor: not-allowed;
-  user-select: none;
+.st-button-disabled {
+  color: rgba(0, 0, 0, 0.2);
   background-color: #f5f5f5;
   border: 1px solid #d9d9d9;
-  color: rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+  user-select: none;
 }

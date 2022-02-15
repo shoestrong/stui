@@ -1,0 +1,127 @@
+@import '../../styles/var.less';
+
+.@{prefix-name} {
+  &-select {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    &-item {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      vertical-align: top;
+      border: 1px solid transparent;
+      cursor: pointer;
+      &:hover:not(.@{prefix-name}-select-item-disabled) {
+        border-color: @primary-color;
+      }
+      &:not(:last-child) {
+        margin-right: 4px;
+      }
+      &-info {
+        word-break: break-all;
+        user-select: none;
+      }
+      &-ok {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+      }
+      &-svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+    &-item-active {
+      border-color: @primary-color;
+      .r-zc-select-item-info {
+        color: @primary-color;
+      }
+    }
+    &-item-disabled {
+      color: @disabled-font-color;
+      background-color: @disabled-bg-color;
+      border: 1px solid @disabled-border-color;
+      cursor: not-allowed;
+      user-select: none;
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        box-sizing: border-box;
+        background-color: transparent;
+        content: '';
+      }
+    }
+    &-disabled {
+      color: @disabled-font-color;
+      background-color: @disabled-bg-color;
+      border: 1px solid @disabled-border-color;
+      cursor: not-allowed;
+      user-select: none;
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        box-sizing: border-box;
+        background-color: transparent;
+        content: '';
+      }
+    }
+  }
+  &-select-normal {
+    .@{prefix-name}-select-item {
+      padding: 4px 12px;
+    }
+    .@{prefix-name}-select-item-info {
+      font-size: 14px;
+    }
+    .@{prefix-name}-select-item-ok {
+      border-top: 20px solid @primary-color;
+      border-left: 20px solid transparent;
+    }
+    .@{prefix-name}-select-item-svg {
+      font-size: 12px;
+    }
+  }
+  &-select-large {
+    .@{prefix-name}-select-item {
+      padding: 8px 24px;
+    }
+    .@{prefix-name}-select-item-info {
+      font-size: 16px;
+    }
+    .@{prefix-name}-select-item-ok {
+      border-top: 22px solid @primary-color;
+      border-left: 22px solid transparent;
+    }
+    .@{prefix-name}-select-item-svg {
+      font-size: 14px;
+    }
+  }
+  &-select-small {
+    .@{prefix-name}-select-item {
+      padding: 3px 9px;
+    }
+    .@{prefix-name}-select-item-info {
+      font-size: 12px;
+    }
+    .@{prefix-name}-select-item-ok {
+      border-top: 18px solid @primary-color;
+      border-left: 18px solid transparent;
+    }
+    .@{prefix-name}-select-item-svg {
+      font-size: 10px;
+    }
+  }
+}

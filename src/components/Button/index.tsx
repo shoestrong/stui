@@ -14,7 +14,7 @@ export interface ButtonProps {
   children?: React.ReactNode;
 }
 
-const cssPrefix: string = 'r-zc-button';
+const cssPrefix: string = 'st-button';
 const Button: FC<ButtonProps> = ({
   children,
   type = 'primary',

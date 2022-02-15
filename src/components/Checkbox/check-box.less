@@ -1,0 +1,111 @@
+@import '../../styles/var.less';
+
+.@{prefix-name} {
+  &-checkbox {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+    cursor: pointer;
+    &-info {
+      position: relative;
+      display: inline-block;
+      box-sizing: initial;
+      width: 1em;
+      height: 1em;
+      margin-right: 6px;
+      input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        outline: none;
+        cursor: pointer;
+        opacity: 0;
+      }
+      &:after {
+        position: absolute;
+        display: block;
+        opacity: 0;
+        transition: opacity 0.2s;
+        content: '';
+      }
+      &:before {
+        position: absolute;
+        top: 0.12em;
+        left: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        color: transparent;
+        border: 1px solid #b9b9b9;
+        border-radius: 0;
+        content: '';
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  &-checkbox-indeterminate {
+    .@{prefix-name}-checkbox-info {
+      &:after {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 0.52em;
+        height: 0.52em;
+        margin: -0.26em 0 0 -0.26em;
+        background-color: @primary-color;
+        border: 0;
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        opacity: 1;
+        content: '';
+      }
+    }
+  }
+  &-checkbox-active {
+    .@{prefix-name}-checkbox-info {
+      &:after {
+        top: 46%;
+        left: 40%;
+        width: 0.25em;
+        height: 0.5em;
+        margin: -0.25em 0 0 -0.125em;
+        border-color: #fff;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        opacity: 1;
+      }
+      &:before {
+        background-color: @primary-color;
+        border-color: @primary-color;
+      }
+    }
+  }
+  &-checkbox-disabled {
+    color: @disabled-font-color;
+    cursor: not-allowed;
+    user-select: none;
+    .@{prefix-name}-checkbox-info {
+      &:before {
+        background-color: @gray-border-color;
+        border-color: @gray-border-color;
+      }
+    }
+  }
+}

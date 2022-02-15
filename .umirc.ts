@@ -35,5 +35,6 @@ export default defineConfig({
   history: {
     type: 'hash',
   },
+  mfsu: { production: { output: '.mfsu-production' } },
   // more config: https://d.umijs.org/config
 });

@@ -1,11 +1,11 @@
 ---
-title: 按钮
+title: Button 按钮
 order: 1
 group:
   title: 基础组件
 ---
 
-## 按钮
+## Button 按钮
 
 ### Type: `String` 按钮类型
 
