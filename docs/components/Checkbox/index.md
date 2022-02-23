@@ -11,7 +11,7 @@ group:
 
 ```tsx
 import React from 'react';
-import { Checkbox } from 'st-react-ui';
+import { Checkbox } from 'stui';
 
 export default () => <Checkbox>中文</Checkbox>;
 ```
@@ -20,7 +20,7 @@ export default () => <Checkbox>中文</Checkbox>;
 
 ```tsx
 import React, { useState } from 'react';
-import { CheckboxGroup, Checkbox } from 'st-react-ui';
+import { CheckboxGroup, Checkbox } from 'stui';
 
 export default () => {
   const [valList, setValList] = useState([2, 3]);
@@ -54,7 +54,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { CheckboxGroup, Checkbox } from 'st-react-ui';
+import { CheckboxGroup, Checkbox } from 'stui';
 
 export default () => {
   const [valList, setValList] = useState([2, 3]);
@@ -86,7 +86,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { CheckboxGroup, Checkbox } from 'st-react-ui';
+import { CheckboxGroup, Checkbox } from 'stui';
 
 export default () => {
   const [valList, setValList] = useState([2, 3]);
@@ -120,7 +120,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { CheckboxGroup, Checkbox } from 'st-react-ui';
+import { CheckboxGroup, Checkbox } from 'stui';
 
 export default () => {
   const [valList, setValList] = useState([2, 3]);
@@ -152,7 +152,7 @@ export default () => {
 
 ```tsx
 import React, { useState } from 'react';
-import { CheckboxGroup, Checkbox } from 'st-react-ui';
+import { CheckboxGroup, Checkbox } from 'stui';
 
 export default () => {
   const [valList, setValList] = useState([2, 3]);

@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  title: 'st-UI',
+  title: 'stui',
   favicon: 'https://learn.shoestrong.com/favicon.ico',
   logo: 'https://learn.shoestrong.com/favicon.ico',
   publicPath: './',

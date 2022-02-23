@@ -13,9 +13,9 @@ group:
 
 ```tsx
 import React from 'react';
-import { Select, SelectItem } from 'st-react-ui';
+import { Select, SelectItem } from 'stui';
 export default () => (
-  <Select>
+  <Select defaultValue={'A'}>
     <SelectItem value={'A'}>选项A</SelectItem>
     <SelectItem value={'B'}>选项B</SelectItem>
     <SelectItem value={'C'}>选项C</SelectItem>
@@ -29,10 +29,10 @@ export default () => (
 
 ```tsx
 import React from 'react';
-import { Select, SelectItem } from 'st-react-ui';
+import { Select, SelectItem } from 'stui';
 
 export default () => (
-  <Select size="small">
+  <Select size="small" defaultValue={'A'}>
     <SelectItem value={'A'}>选项A</SelectItem>
     <SelectItem value={'B'}>选项B</SelectItem>
     <SelectItem value={'C'}>选项C</SelectItem>
@@ -46,10 +46,10 @@ export default () => (
 
 ```tsx
 import React from 'react';
-import { Select, SelectItem } from 'st-react-ui';
+import { Select, SelectItem } from 'stui';
 
 export default () => (
-  <Select size="large">
+  <Select size="large" defaultValue={'A'}>
     <SelectItem value={'A'}>选项A</SelectItem>
     <SelectItem value={'B'}>选项B</SelectItem>
     <SelectItem value={'C'}>选项C</SelectItem>
@@ -65,7 +65,7 @@ export default () => (
 
 ```tsx
 import React from 'react';
-import { Select, SelectItem } from 'st-react-ui';
+import { Select, SelectItem } from 'stui';
 
 export default () => (
   <Select disabled>
@@ -82,7 +82,7 @@ export default () => (
 
 ```tsx
 import React from 'react';
-import { Select, SelectItem } from 'st-react-ui';
+import { Select, SelectItem } from 'stui';
 
 export default () => (
   <Select>
@@ -103,10 +103,10 @@ export default () => (
 
 ```tsx
 import React from 'react';
-import { Select, SelectItem } from 'st-react-ui';
+import { Select, SelectItem } from 'stui';
 
 export default () => (
-  <Select multiple>
+  <Select multiple defaultValue={['A', 'C']}>
     <SelectItem value={'A'}>选项A</SelectItem>
     <SelectItem value={'B'}>选项B</SelectItem>
     <SelectItem value={'C'}>选项C</SelectItem>
@@ -120,7 +120,7 @@ export default () => (
 
 ```tsx
 import React from 'react';
-import { Select, SelectItem } from 'st-react-ui';
+import { Select, SelectItem } from 'stui';
 
 export default () => (
   <Select multiple defaultValue={['A', 'E']} onChange={(val) => console.log(val)}>

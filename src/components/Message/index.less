@@ -1,0 +1,105 @@
+@import '../../styles/var.less';
+
+.@{prefix-name} {
+  &-message {
+    position: fixed;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    pointer-events: none;
+    &-info {
+      box-sizing: border-box;
+      width: 100%;
+      background-color: transparent;
+      &-item {
+        box-sizing: border-box;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: transparent;
+        cursor: pointer;
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+        &-content {
+          display: inline-block;
+          box-sizing: border-box;
+          padding: 6px 12px;
+          font-size: 14px;
+          vertical-align: top;
+          word-break: break-all;
+          background-color: #fff;
+          box-shadow: 0 0 10px @shadow-color;
+          pointer-events: auto;
+        }
+      }
+      &-primary {
+        .st-message-info-item-content {
+          color: #fff;
+          background-color: @primary-color;
+        }
+      }
+      &-warning {
+        .st-message-info-item-content {
+          color: #fff;
+          background-color: @warning-color;
+        }
+      }
+      &-danger {
+        .st-message-info-item-content {
+          color: #fff;
+          background-color: @danger-color;
+        }
+      }
+      &-success {
+        .st-message-info-item-content {
+          color: #fff;
+          background-color: @success-color;
+        }
+      }
+      &-default {
+        .st-message-info-item-content {
+          color: #fff;
+          background-color: @default-color;
+        }
+      }
+
+      &-plain-primary {
+        .st-message-info-item-content {
+          color: @primary-color;
+          background-color: #fff;
+          border: 1px solid @primary-color;
+        }
+      }
+      &-plain-warning {
+        .st-message-info-item-content {
+          color: @warning-color;
+          background-color: #fff;
+          border: 1px solid @warning-color;
+        }
+      }
+      &-plain-danger {
+        .st-message-info-item-content {
+          color: @danger-color;
+          background-color: #fff;
+          border: 1px solid @danger-color;
+        }
+      }
+      &-plain-success {
+        .st-message-info-item-content {
+          color: @success-color;
+          background-color: #fff;
+          border: 1px solid @success-color;
+        }
+      }
+      &-plain-default {
+        .st-message-info-item-content {
+          color: @default-color;
+          background-color: #fff;
+          border: 1px solid @default-color;
+        }
+      }
+    }
+  }
+}

@@ -13,7 +13,7 @@ group:
 
 ```tsx
 import React from 'react';
-import { Button } from 'st-react-ui';
+import { Button } from 'stui';
 
 export default () => <Button type="primary">Primary Button</Button>;
 ```
@@ -22,7 +22,7 @@ export default () => <Button type="primary">Primary Button</Button>;
 
 ```tsx
 import React from 'react';
-import { Button } from 'st-react-ui';
+import { Button } from 'stui';
 
 export default () => <Button type="warning">Warning Button</Button>;
 ```
@@ -31,7 +31,7 @@ export default () => <Button type="warning">Warning Button</Button>;
 
 ```tsx
 import React from 'react';
-import { Button } from 'st-react-ui';
+import { Button } from 'stui';
 
 export default () => <Button type="danger">Danger Button</Button>;
 ```
@@ -40,7 +40,7 @@ export default () => <Button type="danger">Danger Button</Button>;
 
 ```tsx
 import React from 'react';
-import { Button } from 'st-react-ui';
+import { Button } from 'stui';
 
 export default () => <Button type="success">Success Button</Button>;
 ```
@@ -49,7 +49,7 @@ export default () => <Button type="success">Success Button</Button>;
 
 ```tsx
 import React from 'react';
-import { Button } from 'st-react-ui';
+import { Button } from 'stui';
 
 export default () => <Button type="default">Default Button</Button>;
 ```
@@ -60,7 +60,7 @@ plain={false} `默认值`
 
 ```tsx
 import React from 'react';
-import { Button } from 'st-react-ui';
+import { Button } from 'stui';
 
 export default () => (
   <Button type="primary" plain>
@@ -74,7 +74,7 @@ export default () => (
 
 ```tsx
 import React from 'react';
-import { Button } from 'st-react-ui';
+import { Button } from 'stui';
 
 export default () => (
   <>
@@ -101,7 +101,7 @@ export default () => (
 
 ```tsx
 import React from 'react';
-import { Button } from 'st-react-ui';
+import { Button } from 'stui';
 
 export default () => (
   <>
@@ -122,7 +122,7 @@ export default () => (
 
 ```tsx
 import React from 'react';
-import { Button } from 'st-react-ui';
+import { Button } from 'stui';
 
 export default () => (
   <Button type="primary" block onClick={() => console.log(44)}>
@@ -135,7 +135,7 @@ export default () => (
 
 ```tsx
 import React from 'react';
-import { Button } from 'st-react-ui';
+import { Button } from 'stui';
 
 export default () => (
   <Button type="primary" disabled>

@@ -15,8 +15,8 @@ group:
  * defaultShowCode: true
  */
 import React from 'react';
-import { ConfigProvider } from 'st-react-ui';
-import enUS from 'st-react-ui/es/local/en_Us';
+import { ConfigProvider } from 'stui';
+import enUS from 'stui/es/local/en_Us';
 
 export default () => {
   return (

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "st-react-ui",
+  "name": "stui",
   "version": "1.0.0",
   "scripts": {
     "start": "dumi dev",

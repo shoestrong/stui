@@ -1,4 +1,4 @@
-# st-react-ui
+# stui
 
 ## Getting Started
 

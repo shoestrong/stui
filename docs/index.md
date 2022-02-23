@@ -1,6 +1,6 @@
 ---
 hero:
-  title: st-UI
+  title: stui
   desc: 简单的react ui库
   actions:
     - text: 开 始
@@ -15,7 +15,7 @@ features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
     title: Feature 3
     desc: Balabala
-footer: st-UI by [Shoestrong](https://github.com/shoestrong)
+footer: stui by [Shoestrong](https://github.com/shoestrong)
 ---
 
-## 你好 st-UI
+## 你好 stui
