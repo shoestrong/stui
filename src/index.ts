@@ -17,3 +17,6 @@ export { default as SelectItem } from './components/Select/SelectItem';
 
 export type { TagProps } from './components/Tag';
 export { default as Tag } from './components/Tag';
+
+export type { DragProps } from './components/Drag';
+export { default as Drag } from './components/Drag';

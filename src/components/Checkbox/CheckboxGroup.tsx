@@ -1,15 +1,15 @@
 import React, { FC, useState, useEffect } from 'react';
 import classNames from 'classnames';
-import { CheckBoxGroupProps, CheckBoxGroupContext, cssPrefix } from './index';
+import { CheckboxGroupProps, CheckboxGroupContext, cssPrefix } from './index';
 import './check-box-group.less';
 
-export const GroupContext = React.createContext<CheckBoxGroupContext>({
+export const GroupContext = React.createContext<CheckboxGroupContext>({
   disabled: false,
   checkedValue: [],
   onChecked: () => {},
 });
 
-const CheckboxGroup: FC<CheckBoxGroupProps> = ({
+const CheckboxGroup: FC<CheckboxGroupProps> = ({
   className,
   style,
   children,
