@@ -20,3 +20,6 @@ export { default as Tag } from './components/Tag';
 
 export type { DragProps } from './components/Drag';
 export { default as Drag } from './components/Drag';
+
+export type { ModalProps } from './components/Modal';
+export { default as Modal } from './components/Modal';

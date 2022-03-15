@@ -1,0 +1,66 @@
+@import '../../styles/var.less';
+@import '../../styles/modal-transition.less';
+
+.@{prefix-name} {
+  &-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    background-color: transparent;
+    outline: 0;
+    &-info {
+      position: absolute;
+      box-sizing: border-box;
+      background-color: #fff;
+      box-shadow: 0 0 10px @shadow-color;
+    }
+    &-title {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 16px 24px;
+      background-color: @gray-bg-color;
+      border-bottom: 1px solid @gray-border-color;
+      user-select: none;
+      &-info {
+        box-sizing: border-box;
+        width: 100%;
+        padding-right: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        word-break: break-all;
+      }
+      &-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        color: @default-color;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+          color: @hover-close-color;
+        }
+      }
+    }
+    &-body {
+      box-sizing: border-box;
+      width: 100%;
+    }
+    &-footer {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px 16px;
+      border-top: 1px solid @gray-border-color;
+    }
+  }
+}
